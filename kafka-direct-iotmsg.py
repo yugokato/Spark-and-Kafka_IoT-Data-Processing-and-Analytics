@@ -15,7 +15,7 @@ if __name__ == "__main__":
         print("Usage: kafka-direct-iotmsg.py <broker_list> <topic>", file=sys.stderr)
         exit(-1)
 
-    sc = SparkContext(appName="PythonStreamingDirectKafkaWordCount")
+    sc = SparkContext(appName="IoT")
     ssc = StreamingContext(sc, 3)
 
     brokers, topic = sys.argv[1:]
